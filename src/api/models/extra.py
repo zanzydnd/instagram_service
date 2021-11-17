@@ -1,6 +1,6 @@
 from django.db import models
 
-from main.models import BaseModel
+from api.models import BaseModel
 
 
 class ExtraData(BaseModel):

@@ -1,7 +1,7 @@
 from django.db import models
 
 from django.contrib.postgres.fields import ArrayField
-from main.models import SocialNetworkType, BaseModel, BloggerState, Task
+from api.models import SocialNetworkType, BaseModel, BloggerState, Task
 
 
 class SocialNetworkUser(BaseModel):

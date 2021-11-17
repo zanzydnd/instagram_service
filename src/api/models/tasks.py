@@ -1,7 +1,7 @@
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
-from main.models import BaseModel, TaskType, TaskStatus
+from api.models import BaseModel, TaskType, TaskStatus
 
 
 class Task(BaseModel):

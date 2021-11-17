@@ -1,4 +1,4 @@
-from main.models import StateBaseModel
+from api.models import StateBaseModel
 
 
 class SocialNetworkType(StateBaseModel):

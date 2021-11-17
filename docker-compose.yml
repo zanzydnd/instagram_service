@@ -6,9 +6,9 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_DB: modules
+      POSTGRES_DB: instagram
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: modules
+      POSTGRES_PASSWORD: pstgress
     volumes:
       - "db:/var/lib/postgresql/data/"
 
