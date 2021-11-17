@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models import Task, TaskType
+from api.models import Task, TaskType, TaskResult
 
 
 class TaskSerializer(serializers.ModelSerializer):
@@ -12,3 +12,10 @@ class TaskSerializer(serializers.ModelSerializer):
         fields = ['task_id', 'task_type_id', 'data', 'priority', 'fields', 'status']
         read_only_fields = ['task_id', 'status']
 
+
+class TaskResultSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = TaskResult
+        fields = ['task', 'link', 'comment']
+        read_only_fields = ['task', 'link', 'comment']
